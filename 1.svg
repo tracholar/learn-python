@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1">
+	<path d="M10 500 H500 C 400 200,300 200,10 10 L10 500Z" stroke="red" stroke-width="2" fill="none"/>
+	<path d="M500 500 S 400 200, 10 10" stroke="black" stroke-width="2" fill="none"/>
+	<path d="M500 500 Q 400 200, 10 10" stroke="green" stroke-width="2" fill="none"/>
+</svg>
