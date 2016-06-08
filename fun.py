@@ -1,10 +1,13 @@
 import os,sys
-from os.path import join, getsize
+from os.path import join, getsize, exists
 
 def getdirsize(dir):
 	size = 0L
 	for root, dirs, files in os.walk(dir):
-		size += sum([getsize(join(root, name)) for name in files])
+		for name in files:
+			fpath = join(root, name)
+			if exists(fpath):
+				size += getsize(fpath)
 	return size
 
 def getDirListSize(dir, cb):
